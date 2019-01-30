@@ -1,0 +1,98 @@
+/* Normalize the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Standardize font */
+html {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 1.2em;
+  color: ghostwhite;
+}
+
+.pg-container {
+  height: 100%;
+  width: 100%;
+  background-color: chocolate;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+form>div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+
+/* center form info */
+#form-info>* {
+  text-align: center;
+
+}
+
+#form-info, .qset {
+  margin-bottom: 1.3em;
+}
+
+#form {
+  margin-bottom: 2em;
+}
+
+
+#form-info {
+  padding: 1.5em 1em 0 1em;
+}
+
+
+button {
+  width: 6em;
+  margin: auto;
+  background-color: white;
+}
+
+
+.qset>* {
+    padding-bottom: .2em;
+}
+
+
+#dropdown, input {
+  background-color: white;
+  font-size: 1em;
+}
+
+input, textarea {
+  font-size: 1em;
+}
+
+select, textarea {
+  display: block;
+  margin-top: .5em;
+}
+
+/* Fix uneven input fields */
+.fix {
+  display: inline-block;
+  width: 65px;
+}
+
+@media only screen and (min-width: 768px) {
+  form {
+    width: 60%;
+  }
