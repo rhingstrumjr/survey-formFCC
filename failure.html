@@ -15,25 +15,29 @@
       </div>
       <div class="container" id="form">
         <form id="survey-form" action="index.html" method="post">
-
+          <div id="general-info" class="qset">
           <!-- Get name -->
-
+          <div id="name">
             <label id="name-label"><div class="fix">Name:</div>
-              <input type="name" name="name" value="" id="name"
-              placeholder="John Doe" required>
+              <input type="name" name="name" value="" id="name" required>
             </label>
+          </div>
           <!-- Get email -->
+          <div id="email">
             <label id="email-label"><div class="fix">Email:</div>
-              <input type="email" name="email" id="email"
-                      placeholder="johndoe@email.com"required>
+              <input type="email" name="email" id="email" required>
             </label>
+          </div>
           <!-- Get family size -->
+          <div id="family-size">
             <label id="number-label">Family-size:
-              <input id="number" type="number" name="family-size" value=""
-                     placeholder="1" min="1" max="20" step="1">
+              <input id="number" type="number" name="family-size" value="1"
+                     min="1" max="20" step="1">
             </label>
-
+          </div>
+        </div>
           <!-- Get next desired theme -->
+          <div id="next-theme" class="qset">
             <label> What should the next theme be?
               <select id ="dropdown" class="dropdown" name="theme-choice">
                 <option value="aladdin">Aladdin</option>
@@ -43,48 +47,67 @@
                 <option value="the lord of the rings">The Lord of the Rings</option>
               </select>
             </label>
+          </div>
           <!-- Get theme park attendance frequency -->
+          <div id="tpfreq" class="qset">
             <p>How often do you attend theme parks?
+            <div>
               <input type="radio" name="frequency" id="three-or-more"
                       value="3 or more times per year">
               <label for="three-or-more">3 or more times per year</label>
+            </div>
+            <div>
               <input type="radio" name="frequency" id="one-two"
                      value="1-2 times per year">
               <label for="one-two">1-2 times per year</label>
+            </div>
+            <div>
               <input type="radio" name="frequency" id="one-time"
                      value="1 time every few years">
               <label for="one-time">1 time every few years</label>
+            </div>
+            <div>
               <input type="radio" name="frequency" id="zero-times"
                      value="0 times">
               <label for="zero-times">0 times</label>
+            </div>
+          </div>
           <!-- Get liked theme park activities -->
+          <div id="tplikes" class="qset">
             <p>What do you enjoy doing at theme parks?<p>
+            <div>
                 <input type="checkbox" name="entertainment" value="Thrill rides"
                       id="Thrill rides">
                 <label for="Thrill rides">Thrill rides</label>
-
+            </div>
+            <div>
               <input type="checkbox" name="entertainment" value="Gentle rides"
                       id="Gentle rides">
               <label for="Gentle rides">Gentle Rides</label>
-
+            </div>
+            <div>
               <input type="checkbox" name="entertainment" value="Shows"
                       id="Shows">
               <label for="Shows">Shows</label>
-
+            </div>
+            <div>
               <input type="checkbox" name="entertainment" value="Themed food"
                       id="Themed food">
               <label for="Themed food">Themed food</label>
-
+            </div>
+            <div>
               <input type="checkbox" name="entertainment" value="Themed shops"
                       id="Themed shops">
               <label for="Themed shops">Themed shops</label>
-
-
+            </div>
+          </div>
           <!-- Get additional comments -->
+          <div id="add-comments" class="qset">
             <p>Additional comments?</p>
             <textarea name="comments" rows="4" cols="80"></textarea>
+          </div>
           <!-- Submit form -->
-          <button type="submit" name="submit" id="submit">Submit</button>
+          <button type="submit" name="submit">Submit</button>
         </form>
       </div>
     </div>
